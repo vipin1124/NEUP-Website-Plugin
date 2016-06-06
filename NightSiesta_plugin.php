@@ -11,13 +11,11 @@ License: GPL
 ?>
 <?php
 if( is_admin() ) {
-    /*  脌没脫脙 admin_menu 鹿鲁脳脫拢卢脤铆录脫虏脣碌楼 */
     add_action('admin_menu', 'display_NightSiesta_menu');
 }
 
 function display_NightSiesta_menu() {
     /* add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);  */
-    /* 脪鲁脙没鲁脝拢卢虏脣碌楼脙没鲁脝拢卢路脙脦脢录露卤冒拢卢虏脣碌楼卤冒脙没拢卢碌茫禄梅赂脙虏脣碌楼脢卤碌脛禄脴碌梅潞炉脢媒拢篓脫脙脪脭脧脭脢戮脡猫脰脙脪鲁脙忙拢漏 */
     add_options_page('Set NightSiesta', 'NightSiesta Menu', 'administrator','display_nightsiesta', 'display_NightSiesta_html_page');    
 }
 function display_NightSiesta_html_page()
