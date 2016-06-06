@@ -11,11 +11,13 @@ License: GPL
 ?>
 <?php
 if( is_admin() ) {
+    /*  脌没脫脙 admin_menu 鹿鲁脳脫拢卢脤铆录脫虏脣碌楼 */
     add_action('admin_menu', 'display_NightSiesta_menu');
 }
 
 function display_NightSiesta_menu() {
     /* add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);  */
+    /* 脪鲁脙没鲁脝拢卢虏脣碌楼脙没鲁脝拢卢路脙脦脢录露卤冒拢卢虏脣碌楼卤冒脙没拢卢碌茫禄梅赂脙虏脣碌楼脢卤碌脛禄脴碌梅潞炉脢媒拢篓脫脙脪脭脧脭脢戮脡猫脰脙脪鲁脙忙拢漏 */
     add_options_page('Set NightSiesta', 'NightSiesta Menu', 'administrator','display_nightsiesta', 'display_NightSiesta_html_page');    
 }
 function display_NightSiesta_html_page()
@@ -114,10 +116,76 @@ function display_NightSiesta_html_page()
 	</form></br>
 	<?php
 }
-add_filter('the content','show_index');
+add_filter('the content','show_title1');
+add_filter('the content','show_title2');
+add_filter('the content','show_title3');
+add_filter('the content','show_time1');
+add_filter('the content','show_time2');
+add_filter('the content','show_time3');
+add_filter('the content','show_place1');
+add_filter('the content','show_place2');
+add_filter('the content','show_place3');
+add_filter('the content','show_link1');
+add_filter('the content','show_link2');
+add_filter('the content','show_link3');
 /*下面是插件在主页的实现*/
-function show_index()
+function show_title1()
 {
 	if(is_home())
-	return $title1,$title2,$title3,$time1,$time2,$time3,$place1,$place2,$place3,$link1,$link2,$link3;
+	return $title1;
+}
+function show_title2()
+{
+	if(is_home())
+	return $title2;
+}
+function show_title3()
+{
+	if(is_home())
+	return $title3;
+}
+function show_time1()
+{
+	if(is_home())
+	return $time1;
+}
+function show_time2()
+{
+	if(is_home())
+	return $time2;
+}
+function show_time3()
+{
+	if(is_home())
+	return $time3;
+}
+function show_place1()
+{
+	if(is_home())
+	return $place1;
+}
+function show_place2()
+{
+	if(is_home())
+	return $place2;
+}
+function show_place3()
+{
+	if(is_home())
+	return $place3;
+}
+function show_link1()
+{
+	if(is_home())
+	return $link1;
+}
+function show_link2()
+{
+	if(is_home())
+	return $link2;
+}
+function show_link3()
+{
+	if(is_home())
+	return $link3;
 }
