@@ -1,6 +1,6 @@
 <?php  
 /*
-Plugin Name: NightSiesta plugin
+Plugin Name: 活动预告插件
 Plugin URI: 
 Description: 
 Version: 1.0.0
@@ -18,7 +18,7 @@ if( is_admin() ) {
 function display_NightSiesta_menu() {
     /* add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);  */
     /* Ò³Ãû³Æ£¬²Ëµ¥Ãû³Æ£¬·ÃÎÊ¼¶±ð£¬²Ëµ¥±ðÃû£¬µã»÷¸Ã²Ëµ¥Ê±µÄ»Øµ÷º¯Êý£¨ÓÃÒÔÏÔÊ¾ÉèÖÃÒ³Ãæ£© */
-    add_options_page('Set NightSiesta', 'NightSiesta Menu', 'administrator','display_nightsiesta', 'display_NightSiesta_html_page');    
+    add_options_page('活动预告设置', '活动预告设置', 'administrator','display_nightsiesta', 'display_NightSiesta_html_page');    
 }
 function display_NightSiesta_html_page()
 {	?>
@@ -76,12 +76,12 @@ function display_NightSiesta_html_page()
 	?>
 	<?php 
 	$results = $wpdb->get_results("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time2'");
-	foreach($results as $h)
+	foreach($results as $g)
 	$time2= $g->option_value;   
 	?>
 	<?php  
 	$results = $wpdb->get_results("SELECT `option_value` FROM  $wpdb->options  WHERE option_name = 'time3'");
-	foreach($results as $i)
+	foreach($results as $g)
 	$time3= $g->option_value;   
 	?>
 	<?php  
@@ -108,7 +108,7 @@ function display_NightSiesta_html_page()
 	<p>Place2<input type="text" id="place_post2" name="place2" value="<?php echo("$place2") ?>"></p>
 	<p>Link2<input type="text" id="link_post2" name="link2" value="<?php echo("$link2") ?>"></p>
 	<p>Title3<input type="text" id="title_post3" name="title3" value="<?php echo("$title3") ?>"></p>
-	<p>Time3<input class="form-control" name="time3" type="datetime-local" id="time_post3" value="<?php echo str_replace("","T", "$time1") ?>"></p>
+	<p>Time3<input class="form-control" name="time3" type="datetime-local" id="time_post3" value="<?php echo str_replace("","T", "$time3") ?>"></p>
 	<p>Place3<input type="text" id="place_post3" name="place3" value="<?php echo("$place3") ?>"></p>
 	<p>Link3<input type="text" id="link_post3" name="link3" value="<?php echo("$link3") ?>"></p>
 	<input type="submit" value="submit"></input>

@@ -69,22 +69,22 @@ function set_picture_page()
                 <tr>
                     <td>图片二</td><td><input type="text" name="top_left_picture2" value=<?php echo $options['top_left_picture2'] ?>></td>
                     <td>内容二</td><td><input type="text" name="top_left_content2" value=<?php echo $options['top_left_content2'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url2'] ?>></td>
+                    <td>链接二</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url2'] ?>></td>
                 </tr>
                 <tr>
                     <td>图片三</td><td><input type="text" name="top_left_picture3" value=<?php echo $options['top_left_picture3'] ?>></td>
                     <td>内容三</td><td><input type="text" name="top_left_content3" value=<?php echo $options['top_left_content3'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url3'] ?>></td>
+                    <td>链接三</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url3'] ?>></td>
                 </tr>
                 <tr>
                     <td>图片四</td><td><input type="text" name="top_left_picture4" value=<?php echo $options['top_left_picture4'] ?>></td>
                     <td>内容四</td><td><input type="text" name="top_left_content4" value=<?php echo $options['top_left_content4'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url4'] ?>></td>
+                    <td>链接四</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url4'] ?>></td>
                 </tr>
                 <tr>
                     <td>图片五</td><td><input type="text" name="top_left_picture5" value=<?php echo $options['top_left_picture5'] ?>></td>
                     <td>内容五</td><td><input type="text" name="top_left_content5" value=<?php echo $options['top_left_content5'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url5'] ?>></td>
+                    <td>链接五</td><td><input type="text" name="top_left_url1" value=<?php echo $options['top_left_url5'] ?>></td>
                 </tr>
             </table>
             <h3>右下活动图片</h3>
@@ -95,11 +95,11 @@ function set_picture_page()
                 </tr>
                 <tr>
                     <td>图片二</td><td><input type="text" name="activity_picture2" value=<?php echo $options['activity_picture2'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="activity_url2" value=<?php echo $options['activity_url2'] ?>></td>
+                    <td>链接二</td><td><input type="text" name="activity_url2" value=<?php echo $options['activity_url2'] ?>></td>
                 </tr>
                 <tr>
                     <td>图片三</td><td><input type="text" name="activity_picture3" value=<?php echo $options['activity_picture3'] ?>></td>
-                    <td>链接一</td><td><input type="text" name="activity_url3" value=<?php echo $options['activity_url3'] ?>></td>
+                    <td>链接三</td><td><input type="text" name="activity_url3" value=<?php echo $options['activity_url3'] ?>></td>
                 </tr>
             </table>
             图片请输入图片链接
