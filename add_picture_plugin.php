@@ -14,6 +14,18 @@ register_activation_hook(__FILE__, 'picture_plugin_install');
 function picture_plugin_install()
 {
     add_option("neup_picture");
+    for($i = 1; $i <= 5; $i++)
+    {
+        $options["top_left_picture$i"] = " ";
+        $options["top_left_content$i"] = " ";
+        $options["top_left_url$i"] = " ";
+    }
+    for($i = 1; $i <= 3; $i++)
+    {
+        $options["activity_picture$i"] = " ";
+        $options["activity_url$i"] = " ";
+    }
+    update_option("neup_picture", $options);   
 }
 
 register_deactivation_hook(__FILE__, 'picture_plugin_unstall');
